@@ -37,9 +37,15 @@ namespace School_Management_System_by_AKMH
             this.btnDivision = new System.Windows.Forms.Button();
             this.btnClass = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btn_Accounts = new System.Windows.Forms.Button();
+            this.pn_Account = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.pan1.SuspendLayout();
+            this.pn_Account.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -50,6 +56,8 @@ namespace School_Management_System_by_AKMH
             this.flowLayoutPanel1.Controls.Add(this.btnClassAndDiv);
             this.flowLayoutPanel1.Controls.Add(this.pan1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.btn_Accounts);
+            this.flowLayoutPanel1.Controls.Add(this.pn_Account);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1131, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(7);
@@ -134,7 +142,7 @@ namespace School_Management_System_by_AKMH
             this.btnClass.ForeColor = System.Drawing.Color.White;
             this.btnClass.Image = global::School_Management_System_by_AKMH.Properties.Resources.home__1_;
             this.btnClass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClass.Location = new System.Drawing.Point(0, 2);
+            this.btnClass.Location = new System.Drawing.Point(3, 4);
             this.btnClass.Margin = new System.Windows.Forms.Padding(7);
             this.btnClass.Name = "btnClass";
             this.btnClass.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
@@ -161,6 +169,67 @@ namespace School_Management_System_by_AKMH
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btn_Accounts
+            // 
+            this.btn_Accounts.FlatAppearance.BorderSize = 0;
+            this.btn_Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Accounts.ForeColor = System.Drawing.Color.White;
+            this.btn_Accounts.Image = global::School_Management_System_by_AKMH.Properties.Resources.home__1_;
+            this.btn_Accounts.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Accounts.Location = new System.Drawing.Point(7, 459);
+            this.btn_Accounts.Margin = new System.Windows.Forms.Padding(7);
+            this.btn_Accounts.Name = "btn_Accounts";
+            this.btn_Accounts.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.btn_Accounts.Size = new System.Drawing.Size(226, 55);
+            this.btn_Accounts.TabIndex = 5;
+            this.btn_Accounts.Text = "ادارة الحسابات";
+            this.btn_Accounts.UseVisualStyleBackColor = true;
+            this.btn_Accounts.Click += new System.EventHandler(this.btn_Accounts_Click);
+            // 
+            // pn_Account
+            // 
+            this.pn_Account.Controls.Add(this.button3);
+            this.pn_Account.Controls.Add(this.button4);
+            this.pn_Account.Controls.Add(this.button5);
+            this.pn_Account.Location = new System.Drawing.Point(3, 524);
+            this.pn_Account.Name = "pn_Account";
+            this.pn_Account.Size = new System.Drawing.Size(230, 193);
+            this.pn_Account.TabIndex = 6;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::School_Management_System_by_AKMH.Properties.Resources.home__1_;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(-1, 48);
+            this.button4.Margin = new System.Windows.Forms.Padding(7);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.button4.Size = new System.Drawing.Size(230, 40);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "حساب";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::School_Management_System_by_AKMH.Properties.Resources.home__1_;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.Location = new System.Drawing.Point(2, 10);
+            this.button5.Margin = new System.Windows.Forms.Padding(7);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.button5.Size = new System.Drawing.Size(230, 40);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "صنف الحساب";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // pnlMain
             // 
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -168,6 +237,23 @@ namespace School_Management_System_by_AKMH
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1131, 729);
             this.pnlMain.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::School_Management_System_by_AKMH.Properties.Resources.home__1_;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(-5, 87);
+            this.button3.Margin = new System.Windows.Forms.Padding(7);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.button3.Size = new System.Drawing.Size(230, 40);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "حركة حساب";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmMain
             // 
@@ -186,6 +272,7 @@ namespace School_Management_System_by_AKMH
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.pan1.ResumeLayout(false);
+            this.pn_Account.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -201,6 +288,11 @@ namespace School_Management_System_by_AKMH
         private System.Windows.Forms.Button btnClass;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.Button btn_Accounts;
+        private System.Windows.Forms.Panel pn_Account;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
     }
 }
 

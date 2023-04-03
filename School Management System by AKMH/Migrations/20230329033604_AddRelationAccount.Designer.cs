@@ -8,9 +8,10 @@ using School_Management_System_by_AKMH;
 namespace School_Management_System_by_AKMH.Migrations
 {
     [DbContext(typeof(DbSchool))]
-    partial class DbSchoolModelSnapshot : ModelSnapshot
+    [Migration("20230329033604_AddRelationAccount")]
+    partial class AddRelationAccount
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -31,7 +32,7 @@ namespace School_Management_System_by_AKMH.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<bool>("IsActived");
+                    b.Property<int>("IsActive");
 
                     b.Property<DateTime>("LastModifiedDate");
 
@@ -40,36 +41,6 @@ namespace School_Management_System_by_AKMH.Migrations
                     b.HasIndex("AccountTypeId");
 
                     b.ToTable("Accounts");
-                });
-
-            modelBuilder.Entity("School_Management_System_by_AKMH.tbAccountMovement", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("AccountId");
-
-                    b.Property<decimal>("Amount");
-
-                    b.Property<DateTime>("Date");
-
-                    b.Property<string>("Description");
-
-                    b.Property<bool>("IsReconciled");
-
-                    b.Property<string>("ReconciledBy");
-
-                    b.Property<DateTime?>("ReconciledDate");
-
-                    b.Property<int>("StudentId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AccountId");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("tbAccountMovement");
                 });
 
             modelBuilder.Entity("School_Management_System_by_AKMH.tbAccountType", b =>
@@ -145,19 +116,6 @@ namespace School_Management_System_by_AKMH.Migrations
                     b.HasOne("School_Management_System_by_AKMH.tbAccountType", "AccountType")
                         .WithMany("Accounts")
                         .HasForeignKey("AccountTypeId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("School_Management_System_by_AKMH.tbAccountMovement", b =>
-                {
-                    b.HasOne("School_Management_System_by_AKMH.tbAccount", "Account")
-                        .WithMany("AccountMovements")
-                        .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("School_Management_System_by_AKMH.tbStudents", "Student")
-                        .WithMany("AccountMovements")
-                        .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
         }
