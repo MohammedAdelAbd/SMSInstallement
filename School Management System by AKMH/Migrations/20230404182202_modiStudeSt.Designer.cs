@@ -8,9 +8,10 @@ using School_Management_System_by_AKMH;
 namespace School_Management_System_by_AKMH.Migrations
 {
     [DbContext(typeof(DbSchool))]
-    partial class DbSchoolModelSnapshot : ModelSnapshot
+    [Migration("20230404182202_modiStudeSt")]
+    partial class modiStudeSt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")

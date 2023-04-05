@@ -40,10 +40,13 @@ namespace School_Management_System_by_AKMH
                     db = new DbSchool();
                     add = new tbDivision ();
                     add.divisionName  = txtDivName.Text.Trim();
+                    add.studentNum =Convert .ToInt32(txtStudentNum.Text.Trim());
                     db.tbDivisions.Add(add);
                     db.SaveChanges();
                     loadData();
-                    txtDivName.Clear();                }
+                    txtDivName.Clear();
+                    txtStudentNum.Clear();
+                }
                 else
                 {
                     MessageBox.Show("قم بادخال كافة البيانات اولا", "هناك خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);

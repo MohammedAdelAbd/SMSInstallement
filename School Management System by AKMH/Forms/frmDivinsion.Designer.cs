@@ -36,8 +36,11 @@ namespace School_Management_System_by_AKMH
             this.label1 = new System.Windows.Forms.Label();
             this.txtDivName = new System.Windows.Forms.TextBox();
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtStudentNum = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +75,7 @@ namespace School_Management_System_by_AKMH
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(745, 105);
+            this.label1.Location = new System.Drawing.Point(745, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 31);
             this.label1.TabIndex = 11;
@@ -80,7 +83,7 @@ namespace School_Management_System_by_AKMH
             // 
             // txtDivName
             // 
-            this.txtDivName.Location = new System.Drawing.Point(249, 102);
+            this.txtDivName.Location = new System.Drawing.Point(249, 70);
             this.txtDivName.Name = "txtDivName";
             this.txtDivName.Size = new System.Drawing.Size(490, 38);
             this.txtDivName.TabIndex = 9;
@@ -101,7 +104,8 @@ namespace School_Management_System_by_AKMH
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2});
+            this.Column2,
+            this.Column3});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,6 +119,23 @@ namespace School_Management_System_by_AKMH
             this.dgv.RowTemplate.Height = 30;
             this.dgv.Size = new System.Drawing.Size(631, 311);
             this.dgv.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(783, 117);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 31);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "عدد الطلاب";
+            // 
+            // txtStudentNum
+            // 
+            this.txtStudentNum.Location = new System.Drawing.Point(249, 114);
+            this.txtStudentNum.Name = "txtStudentNum";
+            this.txtStudentNum.Size = new System.Drawing.Size(490, 38);
+            this.txtStudentNum.TabIndex = 15;
+            this.txtStudentNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Column1
             // 
@@ -130,11 +151,19 @@ namespace School_Management_System_by_AKMH
             this.Column2.HeaderText = "اسم الشعبة";
             this.Column2.Name = "Column2";
             // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "studentNum";
+            this.Column3.HeaderText = "عدد الطلاب";
+            this.Column3.Name = "Column3";
+            // 
             // frmDivinsion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 729);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtStudentNum);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label1);
@@ -142,7 +171,7 @@ namespace School_Management_System_by_AKMH
             this.Controls.Add(this.dgv);
             this.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "frmDivinsion";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -161,7 +190,10 @@ namespace School_Management_System_by_AKMH
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDivName;
         private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtStudentNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

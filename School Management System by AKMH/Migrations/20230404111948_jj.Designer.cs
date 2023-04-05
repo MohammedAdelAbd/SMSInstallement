@@ -8,9 +8,10 @@ using School_Management_System_by_AKMH;
 namespace School_Management_System_by_AKMH.Migrations
 {
     [DbContext(typeof(DbSchool))]
-    partial class DbSchoolModelSnapshot : ModelSnapshot
+    [Migration("20230404111948_jj")]
+    partial class jj
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -107,8 +108,6 @@ namespace School_Management_System_by_AKMH.Migrations
 
                     b.Property<string>("divisionName");
 
-                    b.Property<int>("studentNum");
-
                     b.HasKey("id");
 
                     b.ToTable("tbDivisions");
@@ -118,8 +117,6 @@ namespace School_Management_System_by_AKMH.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("State");
 
                     b.Property<DateTime>("dateBirth");
 

@@ -18,7 +18,10 @@ namespace School_Management_System_by_AKMH
         public DateTime  dateRegistration { get; set; }
         public int stPhone { get; set; }
         public string  stAddress { get; set; }
+        public Boolean  State { get; set; }
 
         public List<tbAccountMovement> AccountMovements { get; set; }
+        public List<tbVacations> tbVacations { get; set; }
+
     }
 }

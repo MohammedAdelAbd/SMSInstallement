@@ -19,7 +19,8 @@ namespace School_Management_System_by_AKMH
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            pan1.Size = new Size(230, 10);
+            pn_Account.Size = new Size(230, 10);
         }
 
         private void btnClassAndDiv_Click(object sender, EventArgs e)
@@ -68,7 +69,7 @@ namespace School_Management_System_by_AKMH
         {
             if (pn_Account.Size == new Size(230, 10))
             {
-                pn_Account.Size = new Size(230, 193);
+                pn_Account.Size = new Size(230, 130);
             }
             else
             {
@@ -118,6 +119,21 @@ namespace School_Management_System_by_AKMH
         private void button3_Click(object sender, EventArgs e)
         {
             var frm = new frmAccountMovement();
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var frm = new frmVacations();
             frm.TopLevel = false;
             frm.FormBorderStyle = FormBorderStyle.None;
             pnlMain.Controls.Clear();

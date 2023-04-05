@@ -8,9 +8,10 @@ using School_Management_System_by_AKMH;
 namespace School_Management_System_by_AKMH.Migrations
 {
     [DbContext(typeof(DbSchool))]
-    partial class DbSchoolModelSnapshot : ModelSnapshot
+    [Migration("20230404175229_addStatetoStu")]
+    partial class addStatetoStu
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -119,7 +120,7 @@ namespace School_Management_System_by_AKMH.Migrations
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<bool>("State");
+                    b.Property<bool>("Statee");
 
                     b.Property<DateTime>("dateBirth");
 

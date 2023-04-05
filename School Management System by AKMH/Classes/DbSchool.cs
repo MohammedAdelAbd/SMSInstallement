@@ -9,6 +9,13 @@ namespace School_Management_System_by_AKMH
 {
    public class DbSchool :DbContext
     {
+        //Context Mohammed
+        //protected override void OnConfiguring(DbContextOptionsBuilder options)
+        //{
+        //    options.UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=DbSchool;Integrated Security=True");
+        //}
+
+        //context Karrar
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=DbSchool;Integrated Security=True");
@@ -18,5 +25,7 @@ namespace School_Management_System_by_AKMH
         public DbSet <tbStudents> tbStudents { get; set; }
         public DbSet<tbAccountType> AccountTypes { get; set; }
         public DbSet<tbAccount> Accounts { get; set; }
+        public DbSet<tbVacations> tbVacations { get; set; }
+
     }
 }
